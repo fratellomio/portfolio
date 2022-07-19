@@ -1,0 +1,187 @@
+/* general begins */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+ul.show {
+  display: block;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 5rem;
+
+  font-style: italic;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+/* general ends */
+
+/* hero begins */
+
+.hero {
+  height: 100vh;
+  background-color: thistle;
+  font-size: 2.5rem;
+}
+
+.hero-area {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+
+.about-me-button {
+  background-color: coral;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-color: navajowhite;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
+.about-me-button:hover {
+  background-color: lightcoral;
+}
+
+.about-me-button:active {
+  background-color: darkorchid;
+  border-color: orchid;
+  color: whitesmoke;
+}
+
+.socials {
+  padding-bottom: 200px;
+}
+
+.logo {
+  height: 80px;
+  margin: 30px;
+}
+
+.social {
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: purple;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: purple;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    margin: 0px;
+    background-color: rgb(189, 151, 228);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(189, 151, 228);
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* hero ends */
+
+/* footer begins */
+
+footer {
+  padding: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* footer ends */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: thistle; /* Set a background color */
+  color: purple; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
